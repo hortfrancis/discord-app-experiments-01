@@ -61,3 +61,58 @@ ul {
   margin: 0;
   padding-left: 18px;
 }
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+button {
+  font: inherit;
+  color: #fff;
+  background: #5865f2;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4752c4;
+}
+
+#btn-clear-activity {
+  background: #4e5058;
+}
+
+#btn-clear-activity:hover {
+  background: #6d6f78;
+}
+
+#action-result {
+  margin: 10px 0 0;
+  min-height: 1.2em;
+}
+
+#debug details {
+  border-top: 1px solid #1e1f22;
+  padding: 6px 0;
+}
+
+#debug summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #cdd0d4;
+}
+
+#debug pre {
+  margin: 8px 0 0;
+  padding: 10px;
+  background: #1e1f22;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  overflow-x: auto;
+  max-height: 320px;
+}

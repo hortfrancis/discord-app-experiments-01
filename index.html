@@ -20,8 +20,22 @@
           <div id="context"></div>
         </div>
         <div class="card">
-          <h2>Voice channel participants</h2>
+          <h2>Activity participants</h2>
           <ul id="participants"></ul>
+        </div>
+        <div class="card">
+          <h2>Actions</h2>
+          <div class="buttons">
+            <button id="btn-activity" type="button">Set Rich Presence</button>
+            <button id="btn-clear-activity" type="button">Clear presence</button>
+            <button id="btn-invite" type="button">Invite people</button>
+          </div>
+          <p id="action-result" class="muted"></p>
+        </div>
+        <div class="card">
+          <h2>Raw API data</h2>
+          <p class="muted">Everything the SDK handed back — expand a section to explore.</p>
+          <div id="debug"></div>
         </div>
       </section>
     </main>
