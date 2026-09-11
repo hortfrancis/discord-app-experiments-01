@@ -1,0 +1,63 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #1e1f22;
+  color: #dbdee1;
+}
+
+#app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+#status {
+  color: #9aa0a6;
+}
+
+#status.error {
+  color: #f38ba8;
+}
+
+.card {
+  background: #2b2d31;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 12px 0;
+}
+
+.card h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #9aa0a6;
+  margin: 0 0 8px;
+}
+
+#user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.muted {
+  color: #9aa0a6;
+  font-size: 0.85rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 18px;
+}

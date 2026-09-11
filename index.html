@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord Activity Experiment</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <h1>Discord Activity</h1>
+      <p id="status">Booting…</p>
+      <section id="output" hidden>
+        <div class="card">
+          <h2>You</h2>
+          <div id="user"></div>
+        </div>
+        <div class="card">
+          <h2>Context</h2>
+          <div id="context"></div>
+        </div>
+        <div class="card">
+          <h2>Voice channel participants</h2>
+          <ul id="participants"></ul>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

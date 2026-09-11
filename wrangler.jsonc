@@ -1,0 +1,33 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "discord-activity-cf",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-09-01",
+  // Serve the Vite-built client from ./dist. Requests that match a static
+  // file are served directly; everything else (e.g. /api/*) hits the Worker.
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  // Public (non-secret) vars. The client id is also embedded into the client
+  // bundle at build time via VITE_DISCORD_CLIENT_ID (see .dev.vars / README).
+  "vars": {
+    "DISCORD_CLIENT_ID": "1547985782667481088"
+  },
+  // DISCORD_CLIENT_SECRET is a secret — set it with:
+  //   npx wrangler secret put DISCORD_CLIENT_SECRET
+  // and locally via .dev.vars (git-ignored).
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    },
+    "traces": {
+      "enabled": false,
+      "head_sampling_rate": 1,
+      "persist": true
+    }
+  }
+}
